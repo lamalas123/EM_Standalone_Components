@@ -1,6 +1,6 @@
 # STANDALONE_COMPONENTS_EM
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+Basic examples and review of standalone components
 
 ## Development server
 
@@ -8,20 +8,17 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name --standalone` to generate a new standalone component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum --standalone`.
+Run `ng generate component component-name` to generate a new standalone component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum`.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Documentation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+https://angular.io/guide/standalone-components
+https://angular.io/guide/standalone-migration
+https://www.telerik.com/blogs/angular-14-introducing-standalone-components
+https://www.reddit.com/r/Angular2/comments/z2wrr0/whats_the_advantage_of_standalone_components/
+https://wearenotch.com/standalone-components-angular-development-efficiency/
+https://github.com/angular/angular/discussions/43784
