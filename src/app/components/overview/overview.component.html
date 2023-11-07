@@ -1,0 +1,10 @@
+<div class="t-flex t-flex-wrap t-w-full">
+  <div *ngFor="let cardItem of cardItems" class="t-w-1/2 t-p-4">
+    <app-card
+      [title]="cardItem.title"
+      [paragraph]="cardItem.paragraph"
+      [routerLink]="cardItem.routerLink"
+      [isCardMultiple]="true"
+    ></app-card>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div
+  class="t-overflow-x-hidden t-h-screen t-flex t-flex-col t-font-sans t-bg-gray-50"
+>
+  <div class="t-fixed t-top-0 t-w-full t-z-10 t-bg-violet-700 t-shadow-lg">
+    <div
+      class="t-flex t-justify-between t-items-center t-mx-12 t-rounded-lg t-py-3"
+    >
+      <div
+        class="t-flex t-flex-col t-gap-0.5 t-items-start t-cursor-pointer"
+        (click)="goToMainRoute()"
+      >
+        <span class="t-text-2xl t-font-semibold t-text-white"
+          >Angular Standalone Components</span
+        >
+        <span class="t-text-sm t-font-medium t-text-white"
+          >Why and how to use them?</span
+        >
+      </div>
+      <div class="t-flex t-items-center t-gap-3 t-text-xl">
+        <span class="t-flex t-text-white t-font-semibold">
+          {{ formatTime(countdown) }}
+        </span>
+        <button
+          class="t-text-white t-rounded t-flex t-items-center t-pt-0.5"
+          (click)="togglePause()"
+        >
+          <i
+            class="fa"
+            [ngClass]="{ 'fa-pause': !isPaused, ' fa-play': isPaused }"
+          ></i>
+        </button>
+        <button
+          class="t-text-white t-rounded t-flex t-items-center t-pt-0.5"
+          (click)="refreshCountdown()"
+        >
+          <i class="fa fa-refresh"></i>
+        </button>
+      </div>
+
+      <span class="t-flex t-items-end t-text-white t-font-semibold t-text-xl">
+        {{ dateNow | date }}</span
+      >
+    </div>
+  </div>
+  <div class="t-pt-24 t-m-6"><router-outlet></router-outlet></div>
+</div>

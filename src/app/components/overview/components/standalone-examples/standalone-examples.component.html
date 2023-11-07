@@ -1,0 +1,78 @@
+<div class="t-flex t-w-full t-gap-8 t-p-4">
+  <div
+    class="t-flex t-flex-col t-gap-4 t-bg-white t-rounded-lg t-shadow-md t-p-8 t-w-full"
+  >
+    <span
+      class="t-flex t-items-center t-text-2xl t-font-semibold t-text-violet-600"
+      >Basic examples using NgIf, NgFor and Pipes
+    </span>
+    <div
+      class="t-flex t-items-center t-justify-between t-gap-2 t-text-sm t-font-semibold"
+    >
+      <div class="t-flex t-items-center t-gap-2 t-text-sm t-font-semibold">
+        <button
+          (click)="addItemsToList()"
+          class="t-bg-violet-500 hover:t-bg-violet-700 t-text-white t-font-bold t-py-2 t-px-4 t-rounded"
+        >
+          Add Name
+        </button>
+        <button
+          (click)="removeRandomItem()"
+          class="t-bg-violet-500 hover:t-bg-violet-700 t-text-white t-font-bold t-py-2 t-px-4 t-rounded"
+        >
+          Remove Name
+        </button>
+      </div>
+
+      <div
+        *ngIf="areUpperCaseNamesShown"
+        class="t-flex t-items-center t-gap-1 t-text-violet-600 t-whitespace-nowrap t-flex-wrap"
+      >
+        <span *ngFor="let name of names">{{ name + ";" | uppercase }} </span>
+      </div>
+      <button
+        *ngIf="areUpperCaseNamesShown"
+        class="t-bg-violet-500 hover:t-bg-violet-700 t-text-white t-font-bold t-py-2 t-px-4 t-rounded"
+        (click)="toggleAreUpperCaseNamesShown()"
+      >
+        Hide Names
+      </button>
+
+      <button
+        *ngIf="!areUpperCaseNamesShown"
+        class="t-bg-blue-500 hover:t-bg-blue-700 t-text-white t-font-bold t-py-2 t-px-4 t-rounded"
+        (click)="toggleAreUpperCaseNamesShown()"
+      >
+        Preview Names
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="t-flex t-p-4 t-gap-4 t-items-center">
+  <div class="t-flex t-flex-row t-justify-between t-text-xl t-w-full">
+    <app-card
+      appStyleDirective
+      class="t-w-full"
+      [fontSize]="fontSize"
+      (clicked)="handleClicked()"
+      [title]="title"
+      [paragraphs]="paragraphs"
+    ></app-card>
+  </div>
+  <div class="t-bg-white t-rounded-lg t-shadow-md t-p-2 t-px-6">
+    <span class="t-text-base t-font-semibold">Select Font Size:</span>
+    <nz-select
+      class="t-w-full"
+      [(ngModel)]="fontSize"
+      nzPlaceHolder="Choose font size"
+    >
+      <div *ngFor="let size of fontSizes">
+        <nz-option [nzValue]="size" [nzLabel]="size"></nz-option>
+      </div>
+    </nz-select>
+    <span class="t-text-sm"
+      >Component clicked {{ clickedTimes() }} time(s).</span
+    >
+  </div>
+</div>

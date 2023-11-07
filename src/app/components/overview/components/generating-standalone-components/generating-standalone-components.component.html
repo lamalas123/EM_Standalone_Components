@@ -1,0 +1,17 @@
+<div class="t-flex t-justify-start t-p-4">
+  <div
+    class="t-flex t-flex-col t-gap-6 t-text-xl t-w-full t-text-violet-600 t-font-normal"
+  >
+    <span class="t-text-2xl t-font-semibold"
+      >Generating Standalone Components</span
+    >
+
+    <div
+      class="t-flex t-flex-col t-gap-4"
+      *ngFor="let obj of generateComponentObjects"
+    >
+      <span>{{ obj.stepTitle }}</span>
+      <img [src]="obj.imgUrl" />
+    </div>
+  </div>
+</div>

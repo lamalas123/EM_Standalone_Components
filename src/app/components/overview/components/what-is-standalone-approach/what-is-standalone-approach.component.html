@@ -1,0 +1,13 @@
+<div class="t-flex t-justify-start t-w-full t-p-4">
+  <div class="t-flex t-flex-row t-justify-between t-gap-8 t-text-xl">
+    <div *ngFor="let cardItem of cardItems" class="t-w-full">
+      <div class="t-flex t-flex-row t-justify-between t-gap-2 t-text-xl">
+        <app-card
+          [title]="cardItem.title"
+          [paragraphs]="cardItem.paragraphs"
+          [tailwindClass]="tailwindClass"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</div>

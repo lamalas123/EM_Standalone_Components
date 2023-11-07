@@ -1,0 +1,26 @@
+<div
+  *ngIf="!isCardMultiple"
+  [class]="tailwindClass?.height"
+  class="t-p-4 t-bg-white t-shadow-md t-rounded-lg t-w-full"
+>
+  <h2 class="t-text-2xl t-font-semibold t-text-violet-600">
+    {{ title }}
+  </h2>
+  <p *ngFor="let paragraph of paragraphs">
+    {{ paragraph }}
+  </p>
+</div>
+
+<div
+  *ngIf="isCardMultiple"
+  class="t-bg-white t-rounded-lg t-shadow-md t-flex t-w-full"
+>
+  <a class="t-p-4 t-cursor-pointer" [routerLink]="routerLink">
+    <h3 class="t-text-2xl t-font-semibold _cardHeadingTextColor">
+      {{ title }}
+    </h3>
+    <p class="t-text-gray-600 t-text-xl">
+      {{ paragraph }}
+    </p>
+  </a>
+</div>
