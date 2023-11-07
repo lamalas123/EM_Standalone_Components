@@ -17,8 +17,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Documentation
 
 https://angular.io/guide/standalone-components
+
 https://angular.io/guide/standalone-migration
+
 https://www.telerik.com/blogs/angular-14-introducing-standalone-components
+
 https://www.reddit.com/r/Angular2/comments/z2wrr0/whats_the_advantage_of_standalone_components/
+
 https://wearenotch.com/standalone-components-angular-development-efficiency/
+
 https://github.com/angular/angular/discussions/43784
