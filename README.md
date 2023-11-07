@@ -1,12 +1,12 @@
 # STANDALONE_COMPONENTS_EM
 
-Basic examples and review of standalone components
+Basic examples and review of standalone components.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Create a new component, directive, pipe, service, class, guard, interface, enum
 
 Run `ng generate component component-name` to generate a new standalone component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum`.
 
