@@ -18,6 +18,7 @@ export class NgModulesDisadvantagesComponent {
     this.paragraphs = [
       "When a module exports a declared component, directive, or pipe without additional functionality, it becomes a redundant class that doesn't provide significant value.",
       'Bundle size grows and grows, especially when you need to import the same redundant module everywhere.',
+      'More files inside of project to maintain and more code to be written.',
     ];
   }
 }
