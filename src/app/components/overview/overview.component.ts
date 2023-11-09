@@ -28,13 +28,6 @@ export class HomeComponent {
         routerLink: '/standalone/overview/approach',
       },
       {
-        title: 'STANDALONE BENEFITS',
-        paragraph:
-          'Explore the Benefits of the Standalone Approach and its advantages',
-        routerLink: '/standalone/overview/benefits',
-      },
-
-      {
         title: 'GENERATING STANDALONE COMPONENTS',
         paragraph: 'Explore how to generate Standalone components',
         routerLink: '/standalone/overview/generating-components',
@@ -43,6 +36,12 @@ export class HomeComponent {
         title: 'ANGULAR STANDALONE EXAMPLES',
         paragraph: ' Angular examples of standalone approach',
         routerLink: '/standalone/overview/examples',
+      },
+      {
+        title: 'STANDALONE BENEFITS',
+        paragraph:
+          'Explore the Benefits of the Standalone Approach and its advantages',
+        routerLink: '/standalone/overview/benefits',
       },
       {
         title: 'MIGRATE TO STANDALONE COMPONENTS',

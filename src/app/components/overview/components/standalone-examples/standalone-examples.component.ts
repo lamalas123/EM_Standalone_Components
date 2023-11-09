@@ -2,7 +2,13 @@ import { isNil } from 'lodash';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 
 import { NgFor, NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, signal, WritableSignal } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { CardComponent } from '../../../../shared/components/card/card.component';
